@@ -1,4 +1,15 @@
-snippet	[ "link" b
+snippet	[ "link"
 [${1:name}]($1)
 endsnippet
 
+snippet wh "wikiheader" b
+--
+title: `!p snip.rv = snip.basename`
+date: `!v strftime("%Y-%m-%d")`
+tags: :$1:
+--
+
+# `!p snip.rv = snip.basename`
+
+$0
+endsnippet
